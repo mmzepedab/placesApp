@@ -1,5 +1,11 @@
 {
   "name": "placesApp",
-  "app_id": "",
-  "type": "ionic-angular"
+  "app_id": "ef9bf63d",
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/api",
+      "proxyUrl": "http://45.79.74.150:8080/places/api/places/"
+    }
+  ]
 }

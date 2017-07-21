@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-25.3.1_fa97c79b60e9805a5e7dba2e88ac1cd791d79239.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-utils/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-utils-25.3.1_e60ff0de79fb7e31460943824d093e3aaa7b1227.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_7aad2f4df60dc69e0c016e9feac2f46f7f9dfef7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/org.apache.cordova/CordovaLib/6.2.3/debug/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="cd2af1a7180eb6427b58d868cd841d8212aca77e">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/CordovaLib-6.2.3-debug_fa30c8b9a93e768789bb93733ec993ddf069dc96.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.24.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="0e0e8918eb74e3ee9e82eef6430a4359b2b577d3">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.facebook.android-facebook-android-sdk-4.24.0_316dcf2fce6a9553c5088ffd1fb8281700c64ee8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/customtabs/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-customtabs-25.3.1_b7f0d114d10dfef35b82d781c66fbbcadb983e53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_0b2fe2d9a83cd11102eb0b15369b5b6d14b7abaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-compat-25.3.1_bb9e6b5c45dc83801c557d3664d0ecf22d518398.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-core-ui-25.3.1_0877d6462e5931b25eac95b5c45a3034af3f1349.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-media-compat-25.3.1_1582e598a771258c9539c41a9b56f83bb36003de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-fragment/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-fragment-25.3.1_34a0548816c20668934f9f1ced0b42221a5c5211.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-v4/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-v4-25.3.1_a4fd59dde4557bc598af38fbbb891cbf69d4e7a0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-25.3.1_2e2c04c445f5ae1a61841c8f958f3f2929f04164.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-25.3.1_0b1d9ee270ec740a1a96a2ea3ee256a033c756c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/private/var/root/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/bolts-applinks-1.4.0_19774d57cbb1ca6a2cadc314732abc1d6776de87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/com.android.support/cardview-v7/25.3.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-25.3.1_d81d9a211aecc064678a19837b0a6822cf9cfb16.jar" />
+    </item>
+
+</items>
