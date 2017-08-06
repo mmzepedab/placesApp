@@ -13,8 +13,17 @@
 </ion-header>
 
 
-<ion-content padding>
-  <button ion-button (click)="login()">
-    Login with Facebook
-  </button>
-</ion-content>
+<ion-content text-center class="vertical-align-content">
+  <ion-grid>
+        <ion-row>
+              <ion-col>
+                    <h1 no-padding no-margin>Wellcome to Places</h1>
+                      <button ion-button icon-left clear (click)="login()">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <div>Login</div>
+                      </button>
+                    <p no-padding no-margin>This will log you in with your facebook account</p>
+              </ion-col>
+        </ion-row>
+  </ion-grid>
+ </ion-content>

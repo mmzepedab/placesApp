@@ -3,6 +3,10 @@ import { NavController, NavParams } from 'ionic-angular';
 import {FacebookAuth, User, AuthLoginResult} from '@ionic/cloud-angular';
 import { App } from 'ionic-angular';
 import {LoginPage} from '../login/login';
+import {
+  Push,
+  PushToken
+} from '@ionic/cloud-angular';
 
 /**
  * Generated class for the ProfilePage page.
@@ -25,7 +29,8 @@ export class ProfilePage {
     private facebook: FacebookAuth,
     public appCtrl: App,
     public navCtrl: NavController,
-    public navParams: NavParams) {
+    public navParams: NavParams,
+    public push: Push) {
   }
 
   ionViewDidLoad() {
@@ -36,10 +41,12 @@ export class ProfilePage {
 
   getUsername() {
     this.username = this.user.social.facebook.data.full_name;
+    this.profile_picture = this.user.social.facebook.data.profile_picture;
     this.facebook_id = this.user.social.facebook.data.raw_data['id'];
   }
 
   async logout(){
+    await this.push.unregister();
     await this.facebook.logout();
     //this.navCtrl.setRoot(LoginPage);
     this.appCtrl.getRootNav().setRoot(LoginPage);

@@ -88,6 +88,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
+apply from: "phonegap-plugin-barcodescanner/placesapp-barcodescanner.gradle"
+apply from: "phonegap-plugin-push/placesapp-push.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras = file('build-extras.gradle').exists()
@@ -250,6 +252,9 @@ dependencies {
     debugCompile(project(path: "CordovaLib", configuration: "debug"))
     releaseCompile(project(path: "CordovaLib", configuration: "release"))
     compile "com.facebook.android:facebook-android-sdk:4.+"
+    compile "com.android.support:support-v13:23+"
+    compile "com.google.android.gms:play-services-gcm:11+"
+    compile "me.leolin:ShortcutBadger:1.1.14@aar"
     // SUB-PROJECT DEPENDENCIES END
 }
 
@@ -311,4 +316,17 @@ for (def func : cdvPluginPostBuildExtras) {
 //     ext.postBuildExtras = { ... code here ... }
 if (hasProperty('postBuildExtras')) {
     postBuildExtras()
+}
+
+//Quick Fix from ionic forums to make BarcodeScanner Work
+//https://forum.ionicframework.com/t/solved-ionic-run-android-com-android-support-conflicting-v26-alpha1-and-v25-3-1/91826/3
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.1'
+            }
+        }
+    }
 }

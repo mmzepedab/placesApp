@@ -1,30 +1,50 @@
 <ion-header>
   <ion-navbar class="new-background">
     <ion-title>Places</ion-title>
-    <ion-buttons right>
-      <button (click)="logout()" clear ion-button>
-        LOGOUT
+    <ion-buttons end>
+      <button ion-button icon-only (click)="presentModalFilter()">
+        <ion-icon name="md-funnel"></ion-icon>
       </button>
     </ion-buttons>
   </ion-navbar>
+
+  <ion-toolbar class="toolbar toolbar-md" no-border-top="">
+      <ion-searchbar
+        [(ngModel)]="myInput"
+        [showCancelButton]="shouldShowCancel"
+        (ionInput)="onInput($event)"
+        (ionCancel)="onCancel($event)"
+        placeholder="Search Place">
+      </ion-searchbar>
+  </ion-toolbar>
+
+
 </ion-header>
 
-<ion-content padding>
+<ion-content>
   <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
   </ion-refresher>
 
 
+
+
   <ion-list>
-    <button ion-item *ngFor="let place of places">
-      <ion-thumbnail item-left>
+    <ion-item *ngFor="let place of places" (click)="navigate(place.id)">
+      <ion-avatar item-start>
           <img src="{{place.image_thumbnail}}">
-        </ion-thumbnail>
-        <h2>{{place.name}}</h2>
-        <p>{{place.description}}</p>
-      <div class="item-note" item-right>
-        {{place.offers.length}}
-      </div>
-    </button>
+        </ion-avatar>
+        <h2><b>{{place.name}}</b></h2>
+        <p>Subscriptores: {{place.subscriber_count}}</p>
+        <ion-note item-end>Offers: {{place.offers.length}}</ion-note>
+    </ion-item>
   </ion-list>
+
+  <ion-infinite-scroll *ngIf="loadMoreData==true" (ionInfinite)="doInfinite($event, nextPage)">
+     <ion-infinite-scroll-content
+      loadingSpinner="bubbles"
+      loadingText="Loading more data...">
+    </ion-infinite-scroll-content>
+   </ion-infinite-scroll>
+
 </ion-content>

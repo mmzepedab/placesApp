@@ -13,7 +13,29 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+  <ion-card class="blurred-title-card">
+  <div class="card-image" [style.background-image]="'url(' + profile_picture + ')'" >
+
+    <div padding-top text-center *ngIf="username" id="center-profile">
+      <img src="https://graph.facebook.com/{{facebook_id}}/picture?type=normal" alt="avatar">
+    </div>
+
+  </div>
+
+
+
+  <div class="card-title-background">
+    <span [style.background-image]="'url(' + profile_picture + ')'"></span>
+  </div>
+
+  <div class="card-title">
+    <p>
+      {{username}}
+    </p>
+  </div>
+</ion-card>
 
   <div padding-top text-center *ngIf="username">
     <img src="https://graph.facebook.com/{{facebook_id}}/picture?type=normal" alt="avatar">
