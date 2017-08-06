@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/res/merged/debug/layout-land/share.xml",
+        "source": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/layout-land/share.xml"
+    },
+    {
+        "merged": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/res/merged/debug/layout-land/encode.xml",
+        "source": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/layout-land/encode.xml"
+    }
+]

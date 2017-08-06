@@ -1,0 +1,59 @@
+<!--
+  Generated template for the PlaceOffersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Place Offers</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+
+
+
+        <ion-card *ngFor="let offer of offers" (click)="navigate(place.id)">
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="{{ offer?.place_image_thumbnail }}">
+          </ion-avatar>
+          <h2>{{ offer?.place_name }}</h2>
+          <p>Subscribers: {{ offer?.place_subscribers_count }}</p>
+
+        </ion-item>
+
+        <img src="{{ offer?.image }}">
+
+        <ion-card-content style="white-space: pre-line;">
+          <b>{{ offer?.name }}</b>
+          {{ offer?.description }}
+        </ion-card-content>
+
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-left clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>10,200 Me llega</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-left clear small (click)="navigatePlaceOffers(offer?.id)">
+              <ion-icon name="share-alt"></ion-icon>
+              <div>Share</div>
+            </button>
+          </ion-col>
+        </ion-row>
+
+      </ion-card>
+
+
+
+
+</ion-content>

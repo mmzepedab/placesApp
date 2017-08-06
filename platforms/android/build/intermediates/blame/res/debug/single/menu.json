@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/res/merged/debug/menu/capture.xml",
+        "source": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/menu/capture.xml"
+    },
+    {
+        "merged": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/res/merged/debug/menu/history.xml",
+        "source": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/menu/history.xml"
+    },
+    {
+        "merged": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/res/merged/debug/menu/encode.xml",
+        "source": "/Users/mmzepedab/Desktop/mario/placesApp/platforms/android/build/intermediates/exploded-aar/barcodescanner/res/menu/encode.xml"
+    }
+]
