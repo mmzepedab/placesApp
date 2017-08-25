@@ -5,7 +5,7 @@
   "proxies": [
     {
       "path": "/api/",
-      "proxyUrl": "http://45.79.74.150:8080/places/api/"
+      "proxyUrl": "http://placestime.com/places/api"
     }
   ]
 }

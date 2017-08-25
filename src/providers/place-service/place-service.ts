@@ -28,7 +28,7 @@ public facebook_id;
 
 getPlaces(search){
   if (this.platform.is('cordova')) {
-          this.url= "http://45.79.74.150:8080/places/api/"+"places/?search="+search;
+          this.url= "http://placestime.com/places/api/"+"places/?search="+search;
      }else{
           this.url= '/api/'+"places/";
      }
@@ -43,7 +43,7 @@ getPlacesNext(nextPage){
   console.log("Getting next Places");
 
   if (this.platform.is('cordova')) {
-          this.url= "http://45.79.74.150:8080/places/api/" + "places/?page="+nextPage;
+          this.url= "http://placestime.com/places/api/" + "places/?page="+nextPage;
      }else{
           this.url= '/api/'+"places/?page="+nextPage;
      }
@@ -59,9 +59,9 @@ getPlacesNext(nextPage){
 getPlace(placeId){
   console.log("Getting Place data with id: " + placeId);
   if (this.platform.is('cordova')) {
-          this.url= "http://45.79.74.150:8080/places/api/places/" + placeId +"/?facebook_id="+ this.facebook_id +"&place_id="+placeId;
+          this.url= "http://placestime.com/places/api/places/" + placeId +"/?facebook_id="+ this.facebook_id +"&place_id="+placeId;
      }else{
-          this.url= "http://45.79.74.150:8080/places/api/places/" + placeId +"/?facebook_id="+ this.facebook_id +"&place_id="+placeId;
+          this.url= "http://placestime.com/places/api/places/" + placeId +"/?facebook_id="+ this.facebook_id +"&place_id="+placeId;
      }
 
   return this.http.get(this.url)
@@ -73,9 +73,9 @@ getPlace(placeId){
 getPlaceOffers(placeId){
   console.log("Getting Place offers with id: " + placeId);
   if (this.platform.is('cordova')) {
-          this.url= "http://45.79.74.150:8080/places/api/placeOffers/?place_id=" + placeId;
+          this.url= "http://placestime.com/places/api/placeOffers/?place_id=" + placeId;
      }else{
-          this.url= "http://45.79.74.150:8080/places/api/placeOffers/?place_id=" + placeId;
+          this.url= "http://placestime.com/places/api/placeOffers/?place_id=" + placeId;
      }
 
   return this.http.get(this.url)

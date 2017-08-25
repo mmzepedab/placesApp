@@ -24,7 +24,7 @@ private url: string;
 
   getOffers(){
     //console.log("Getting Place offers with id: " + placeId);
-    this.url= "http://45.79.74.150:8080/places/api/offers/";
+    this.url= "http://placestime.com/places/api/offers/";
 
     return this.http.get(this.url)
     .do((res: Response) => console.log("Response inside  getOffers Service: " + res))

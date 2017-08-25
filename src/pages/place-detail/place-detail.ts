@@ -73,7 +73,7 @@ subscribeUserToPlace(placeId){
   let body = {};
 
 if(!this.is_subscribed){
-  this.http.put("http://45.79.74.150:8080/places/api/placeSubscriber/0/?facebook_id="+this.facebook_id+"&place_id="+placeId, JSON.stringify(body), { headers: headers })
+  this.http.put("http://placestime.com/places/api/placeSubscriber/0/?facebook_id="+this.facebook_id+"&place_id="+placeId, JSON.stringify(body), { headers: headers })
     .map((res: Response) => res.json())
     .subscribe(data => {
       console.log(data);
@@ -84,7 +84,7 @@ if(!this.is_subscribed){
       //this.navCtrl.setRoot(TabsPage);
     });
   }else{
-    this.http.delete("http://45.79.74.150:8080/places/api/placeSubscriber/0/?facebook_id="+this.facebook_id+"&place_id="+placeId, { headers: headers })
+    this.http.delete("http://placestime.com/places/api/placeSubscriber/0/?facebook_id="+this.facebook_id+"&place_id="+placeId, { headers: headers })
       .map((res: Response) => res.json())
       .subscribe(data => {
         console.log(data);

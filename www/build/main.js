@@ -172,7 +172,7 @@ var LoginPage = (function () {
             "ionic_id": this.ionic_id
         };
         if (this.platform.is('cordova')) {
-            this.url = "http://45.79.74.150:8080/places/api/";
+            this.url = "http://placestime.com/places/api/";
         }
         else {
             this.url = '/api/';
@@ -261,7 +261,7 @@ var PlaceServiceProvider = (function () {
     }
     PlaceServiceProvider.prototype.getPlaces = function (search) {
         if (this.platform.is('cordova')) {
-            this.url = "http://45.79.74.150:8080/places/api/" + "places/?search=" + search;
+            this.url = "http://placestime.com/places/api/" + "places/?search=" + search;
         }
         else {
             this.url = '/api/' + "places/";
@@ -274,7 +274,7 @@ var PlaceServiceProvider = (function () {
     PlaceServiceProvider.prototype.getPlacesNext = function (nextPage) {
         console.log("Getting next Places");
         if (this.platform.is('cordova')) {
-            this.url = "http://45.79.74.150:8080/places/api/" + "places/?page=" + nextPage;
+            this.url = "http://placestime.com/places/api/" + "places/?page=" + nextPage;
         }
         else {
             this.url = '/api/' + "places/?page=" + nextPage;
@@ -288,10 +288,10 @@ var PlaceServiceProvider = (function () {
     PlaceServiceProvider.prototype.getPlace = function (placeId) {
         console.log("Getting Place data with id: " + placeId);
         if (this.platform.is('cordova')) {
-            this.url = "http://45.79.74.150:8080/places/api/places/" + placeId + "/?facebook_id=" + this.facebook_id + "&place_id=" + placeId;
+            this.url = "http://placestime.com/places/api/places/" + placeId + "/?facebook_id=" + this.facebook_id + "&place_id=" + placeId;
         }
         else {
-            this.url = "http://45.79.74.150:8080/places/api/places/" + placeId + "/?facebook_id=" + this.facebook_id + "&place_id=" + placeId;
+            this.url = "http://placestime.com/places/api/places/" + placeId + "/?facebook_id=" + this.facebook_id + "&place_id=" + placeId;
         }
         return this.http.get(this.url)
             .do(function (res) { return console.log("Response inside getPlace Service: " + res); })
@@ -301,10 +301,10 @@ var PlaceServiceProvider = (function () {
     PlaceServiceProvider.prototype.getPlaceOffers = function (placeId) {
         console.log("Getting Place offers with id: " + placeId);
         if (this.platform.is('cordova')) {
-            this.url = "http://45.79.74.150:8080/places/api/placeOffers/?place_id=" + placeId;
+            this.url = "http://placestime.com/places/api/placeOffers/?place_id=" + placeId;
         }
         else {
-            this.url = "http://45.79.74.150:8080/places/api/placeOffers/?place_id=" + placeId;
+            this.url = "http://placestime.com/places/api/placeOffers/?place_id=" + placeId;
         }
         return this.http.get(this.url)
             .do(function (res) { return console.log("Response inside getPlace offers Service: " + res); })
@@ -401,7 +401,7 @@ var PlaceDetailPage = (function () {
         var todayDate = new Date().toISOString().slice(0, 10);
         var body = {};
         if (!this.is_subscribed) {
-            this.http.put("http://45.79.74.150:8080/places/api/placeSubscriber/0/?facebook_id=" + this.facebook_id + "&place_id=" + placeId, JSON.stringify(body), { headers: headers })
+            this.http.put("http://placestime.com/places/api/placeSubscriber/0/?facebook_id=" + this.facebook_id + "&place_id=" + placeId, JSON.stringify(body), { headers: headers })
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 console.log(data);
@@ -413,7 +413,7 @@ var PlaceDetailPage = (function () {
             });
         }
         else {
-            this.http.delete("http://45.79.74.150:8080/places/api/placeSubscriber/0/?facebook_id=" + this.facebook_id + "&place_id=" + placeId, { headers: headers })
+            this.http.delete("http://placestime.com/places/api/placeSubscriber/0/?facebook_id=" + this.facebook_id + "&place_id=" + placeId, { headers: headers })
                 .map(function (res) { return res.json(); })
                 .subscribe(function (data) {
                 console.log(data);
@@ -1092,7 +1092,7 @@ var OfferServiceProvider = (function () {
     }
     OfferServiceProvider.prototype.getOffers = function () {
         //console.log("Getting Place offers with id: " + placeId);
-        this.url = "http://45.79.74.150:8080/places/api/offers/";
+        this.url = "http://placestime.com/places/api/offers/";
         return this.http.get(this.url)
             .do(function (res) { return console.log("Response inside  getOffers Service: " + res); })
             .map(function (res) { return res.json(); })

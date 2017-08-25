@@ -133,7 +133,7 @@ export class LoginPage {
     };
 
     if (this.platform.is('cordova')) {
-            this.url= "http://45.79.74.150:8080/places/api/";
+            this.url= "http://placestime.com/places/api/";
        }else{
             this.url= '/api/';
        }
